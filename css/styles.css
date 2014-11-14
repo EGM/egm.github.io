@@ -1,4 +1,19 @@
-body
-{
-  font-size: 40pt;
+body {
+  //  font-size: 40pt;
 }
+h1, h2, h3 {
+  padding-left: 30px;
+}
+h1 {
+  padding-top: 150px;
+}
+p {
+  padding: 0px 50px 0px 50px;
+  	font-family: serif;
+}
+
+#avatar {
+  float: left;
+  padding: 50px;
+}
+
