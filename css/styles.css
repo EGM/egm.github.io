@@ -7,11 +7,14 @@ html {
   float: left;
 }
 #header h1 {
+  color: Brown;
   font-size: 40px;
-  padding: 100px 0px 30px 250px;
+  padding: 100px 0px 27px 250px;
 }
 #main {
   padding: 20px;
+  background-color: Cornsilk;
+  border-top: solid Black 1px;
 }
 #main li {
   margin-top: 0.5em;
