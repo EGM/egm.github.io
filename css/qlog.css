@@ -1,0 +1,30 @@
+
+#qlog .line {
+  background-color:#e6e6e6;
+}
+#qlog .array, .object {
+  color: DarkBlue;
+}
+#qlog .error, .false {
+  color: Red;
+}
+#qlog .function {
+  color: Blue;
+}
+#qlog .number, .string {
+  color: Black;
+}
+#qlog .null {
+  color: DarkRed;
+}
+#qlog .true {
+  color: Green;
+}
+
+.syntaxhighlighter .line.alt1 {
+  background-color: #dfdfdf !important;
+}
+
+.syntaxhighlighter .line.alt2 {
+  background-color: #e6e6e6 !important;
+}

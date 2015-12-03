@@ -1,23 +1,51 @@
-body,
-html {
-	margin: 0;
-	padding: 0;
+
+body {
+  padding: 1em;
+  background-color:#dedede;
+}
+h4 {
+  position: relative;
+  top: 1.4em;
+  margin-left: 0em;
+  width: 40%;
+  padding: .25em 1em 0em 1.0em;
+  background-color: #d3d3d3;
+  border-left: thin solid #ddf;
+  border-right: thin solid #ddf;
+  border-top: thin solid #ddf;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.example {
+  width: auto;
+  margin: 0em;;
+  padding: 1em;
+  background-color: #d3d3d3;
+  border: thin solid #ddf;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+}
+.example code {
+  font-size: 1.0em;
+}
+.line {
+  width: auto;
+  margin-left: 0em;
+  margin-right: 0em;
+  background-color: #e6e6e6
+}
+.true {color: green;}
+.false {color: red;}
+.title {
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'san serif';
+}
+.footnote {
+  font-size: 0.8em;
 }
 #avatar {
   float: left;
+  margin-right: 3em;
 }
-#header h1 {
-  color: Brown;
-  font-size: 40px;
-  padding: 100px 0px 27px 250px;
-}
-#main {
-  padding: 20px;
-  background-color: Cornsilk;
-  border-top: solid Black 1px;
-}
-#main li {
-  margin-top: 0.5em;
-}
-
-
