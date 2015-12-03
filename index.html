@@ -3,7 +3,16 @@
   <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="css/styles.css" rel="stylesheet">
+	<link href="css/shCoreDefault.css" rel="stylesheet" />
+	<link href="css/qlog.css" rel="stylesheet" />
+	<link href="css/styles.css" rel="stylesheet" />
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/underscore-min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script src="js/qlog.js"></script>
+	<script>SyntaxHighlighter.all();</script>
   </head>
   <body>
 	<div id="header">
@@ -19,6 +28,19 @@
 
 	  <h3><a href="qlog/">qlog</a></h3>
 	  <p>Quick logging for JavaScript</p>
+	  <p>Turns: <code><strong>qlog(qlog( [{name: "John"}, {name: "Sue"}],
+			"some people");</strong></code>into:</p>
+	  <p>[<script>document.write(moment().format("hh:mm:ss.SSS"));</script>]
+		<span class="title">Some People</span></p>
+	  <pre class="brush: js;">
+		[
+		  {
+		    "name":"John"
+		  },
+		  {
+		    "name":"Sue"
+		  }
+		]</pre>
 	  
 	  <h3>WellTrakMulti</h3>
 

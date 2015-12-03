@@ -48,4 +48,5 @@ h4 {
 #avatar {
   float: left;
   margin-right: 3em;
+  border: 2px solid #ddf;
 }
