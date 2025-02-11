@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Structures</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <style>
+        #map {
+            height: 680px;
+        }
+    </style>
+    <script>
+        const Ditch3 = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [-81.20770603772328, 29.549365384277987],
+                        [-81.20773413398477, 29.54935879941885],
+                        [-81.20776312472435, 29.54936097126184],
+                        [-81.20778951323098, 29.549371637850637],
+                        [-81.20781011666129, 29.54938951263721],
+                        [-81.20782244993754, 29.549412439658493],
+                        [-81.20782502548457, 29.549437653577353],
+                        [-81.20781753265341, 29.54946211322306],
+                        [-81.20780087519007, 29.54948286840136],
+                        [-81.20777706223049, 29.549497415731423],
+                        [-81.2073393651261, 29.549675719858694],
+                        [-81.20731024359213, 29.549682654520193],
+                        [-81.20728015187922, 29.54968050634581],
+                        [-81.20725271949205, 29.549669534437065],
+                        [-81.20723125518136, 29.54965106216809],
+                        [-81.20721834785981, 29.54962731756714],
+                        [-81.20721555434088, 29.549601164583525],
+                        [-81.20722321156417, 29.54957575765304],
+                        [-81.20724039595554, 29.549554161226478],
+                        [-81.20726503482378, 29.549538980151606],
+                        [-81.20770603772328, 29.549365384277987]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Ditch 3",
+                "description": "Ditch 3",
+                "styleUrl": "#poly",
+                "fill-opacity": 0.5019607843137255,
+                "fill": "#42a5f5",
+                "stroke-opacity": 1,
+                "stroke": "#fbc02d",
+                "stroke-width": 2,
+                "icon-offset": [
+                    64,
+                    128
+                ],
+                "icon-offset-units": [
+                    "pixels",
+                    "insetPixels"
+                ],
+                "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+            }
+        }
+    </script>
+    <script>
+        Ditch4 = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [-81.20779513570263, 29.549538982258795],
+                        [-81.20782375441071, 29.549532124129097],
+                        [-81.20785334353269, 29.54953419461254],
+                        [-81.20788033418374, 29.549544943978265],
+                        [-81.20790147089302, 29.54956307569412],
+                        [-81.20791420426144, 29.549586402807584],
+                        [-81.20791699845685, 29.549612111724493],
+                        [-81.20790951645803, 29.549637101570053],
+                        [-81.20789266070447, 29.54965835820007],
+                        [-81.20786846424883, 29.549673317751257],
+                        [-81.20743506539019, 29.54984731625874],
+                        [-81.20740674214008, 29.549854419456768],
+                        [-81.20737733430222, 29.54985266718538],
+                        [-81.20735038889588, 29.549842270794365],
+                        [-81.20732915593473, 29.549824484241917],
+                        [-81.20731619642724, 29.549801452848758],
+                        [-81.2073130734813, 29.549775954540817],
+                        [-81.20732016377025, 29.54975106479034],
+                        [-81.20733661210063, 29.549729785668575],
+                        [-81.20736043456102, 29.54971468375165],
+                        [-81.20779513570263, 29.549538982258795]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Ditch 4",
+                "description": "Ditch 4",
+                "styleUrl": "#poly",
+                "fill-opacity": 0.5019607843137255,
+                "fill": "#42a5f5",
+                "stroke-opacity": 1,
+                "stroke": "#fbc02d",
+                "stroke-width": 2,
+                "icon-offset": [
+                    64,
+                    128
+                ],
+                "icon-offset-units": [
+                    "pixels",
+                    "insetPixels"
+                ],
+                "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+            }
+        }
+    </script>
+    <script>
+        Ditch5 = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [-81.20739104106146, 29.5488723861214],
+                        [-81.207418608872, 29.54886630408633],
+                        [-81.20744690532916, 29.548868791237492],
+                        [-81.20747251746256, 29.548879547587735],
+                        [-81.20749235607094, 29.54889727576248],
+                        [-81.20750402832533, 29.548919837482213],
+                        [-81.20750612637958, 29.548944511470555],
+                        [-81.2074983971774, 29.548968321680363],
+                        [-81.20748177297465, 29.548988396248937],
+                        [-81.2074582588955, 29.549002313887033],
+                        [-81.2069700600366, 29.54919741353598],
+                        [-81.20694253167751, 29.54920370137152],
+                        [-81.20691419137613, 29.54920141936358],
+                        [-81.20688845739105, 29.54919084275599],
+                        [-81.20686843362067, 29.549173247243726],
+                        [-81.20685653522723, 29.54915075510524],
+                        [-81.20685419733258, 29.549126079224393],
+                        [-81.20686170192128, 29.549102195876586],
+                        [-81.20687814382923, 29.549081985746042],
+                        [-81.20690153991964, 29.54906788647278],
+                        [-81.20739104106146, 29.5488723861214]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Ditch 5",
+                "description": "Ditch 5",
+                "styleUrl": "#poly",
+                "fill-opacity": 0.5019607843137255,
+                "fill": "#42a5f5",
+                "stroke-opacity": 1,
+                "stroke": "#fbc02d",
+                "stroke-width": 2,
+                "icon-offset": [
+                    64,
+                    128
+                ],
+                "icon-offset-units": [
+                    "pixels",
+                    "insetPixels"
+                ],
+                "icon": "https://earth.google.com/earth/document/icon?color=1976d2&id=2000&scale=4"
+            }
+        }
+    </script>
+    <script>
+        valveIcon = L.icon({
+            iconUrl: 'valve-icon.svg',
+
+            iconSize: [15, 10], // size of the icon
+            //shadowSize: [50, 64], // size of the shadow
+            iconAnchor: [5, 5], // point of the icon which will correspond to marker's location
+            //shadowAnchor: [4, 62],  // the same for the shadow
+            popupAnchor: [-3, -3] // point from which the popup should open relative to the iconAnchor
+        });
+    </script>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script>
+        mbAttr = 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+        mbUrl = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
+        base_layer = L.tileLayer(mbUrl, { id: 'mapbox.streets', attribution: mbAttr })
+        let map = L.map('map').setView([29.549832, -81.207005], 18);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 21, attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(map);
+        //L.tileLayer(mbUrl, { maxZoom: 21, attribution: mbAttr }).addTo(map);
+        //
+        const c = { red: "#f66", grn: "#6f6", blu: "#66f" };
+        //
+        L.circle([29.549832, -81.207005], { radius: 10, color: c.blu }).addTo(map).bindPopup('Clarifier 3');
+        L.circle([29.549993, -81.206607], { radius: 10, color: c.blu }).addTo(map).bindPopup('Clarifier 4');
+        L.circle([29.550184, -81.207190], { radius: 10, color: c.blu }).addTo(map).bindPopup('Clarifier 5');
+        L.circle([29.550343, -81.206791], { radius: 10, color: c.blu }).addTo(map).bindPopup('Clarifier 6');
+        L.circle([29.549373, -81.206515], { radius: 10, color: c.blu }).addTo(map).bindPopup('Clarifier 7');
+        L.circle([29.549492, -81.206216], { radius: 10, color: c.blu }).addTo(map).bindPopup('Clarifier 8');
+        //
+        L.polygon([[29.550234, -81.206470], [29.550281, -81.206359], [29.550184, -81.206306], [29.550137, -81.206419]], { color: c.blu }).addTo(map).bindPopup('Digester 1');
+        L.polygon([[29.550095, -81.206397], [29.550139, -81.206285], [29.550044, -81.206234], [29.549997, -81.206346]], { color: c.blu }).addTo(map).bindPopup('Digester 2');
+        L.polygon([[29.550303, -81.206309], [29.550346, -81.206197], [29.550251, -81.206146], [29.550205, -81.206258]], { color: c.blu }).addTo(map).bindPopup('Digester 3');
+        L.polygon([[29.550160, -81.206234], [29.550206, -81.206123], [29.550111, -81.206073], [29.550064, -81.206183]], { color: c.blu }).addTo(map).bindPopup('Digester 4');
+        L.circle([29.54978, -81.20615033], { radius: 13, color: c.blu }).addTo(map).bindPopup('Digester 5');
+        //
+        L.circle([29.548313, -81.206373], { radius: 28, color: c.blu }).addTo(map).bindPopup('6 MG Tank');
+        //
+        L.polygon([[29.549344, -81.207104], [29.549426, -81.206900], [29.549329, -81.206849], [29.549248, -81.207053]], { color: c.blu }).addTo(map).bindPopup("CCC #2");
+        L.polygon([[29.549517, -81.207145], [29.549597, -81.206940], [29.549501, -81.206890], [29.549418, -81.207093]], { color: c.blu }).addTo(map).bindPopup("CCC #1");
+        //
+        L.polygon([[29.549594, -81.206787], [29.549628, -81.206699], [29.549494, -81.206629], [29.549461, -81.206715]], { color: c.blu }).addTo(map).bindPopup("Disc Filters");
+        //
+        L.polygon([[29.550128, -81.206933], [29.550140, -81.206901], [29.550060, -81.206854], [29.550045, -81.206890]], { color: c.blu }).addTo(map).bindPopup("RAS #1");
+        L.polygon([[29.549346, -81.206326], [29.549359, -81.206290], [29.549278, -81.206246], [29.549263, -81.206285]], { color: c.blu }).addTo(map).bindPopup("RAS #2");
+        //
+        L.geoJSON(Ditch3, { color: c.blu }).addTo(map).bindPopup('Ditch 3');
+        L.geoJSON(Ditch4, { color: c.blu }).addTo(map).bindPopup('Ditch 4');
+        L.geoJSON(Ditch5, { color: c.blu }).addTo(map).bindPopup('Ditch 5');
+        //
+        L.marker([29.549680, -81.207135], { icon: valveIcon }).addTo(map).bindPopup('Clarifier 3 Influent Valve');
+        L.marker([29.549865, -81.207208], { icon: valveIcon }).addTo(map).bindPopup('Clarifier 4 Influent Valve');
+        L.marker([29.549928, -81.206789], { icon: valveIcon }).addTo(map).bindPopup('Clarifier 3/4 Return Valves');
+        //
+        L.marker([29.550174, -81.206944], { icon: valveIcon }).addTo(map).bindPopup('Clarifier 5/6 Influent Valves');
+        L.marker([29.550292, -81.206987], { icon: valveIcon }).addTo(map).bindPopup('Clarifier 5/6 Return Valves');
+        //
+        L.marker([29.549540, -81.206422], { icon: valveIcon }).addTo(map).bindPopup('Clarifier 7/8 Influent Valves');
+        L.marker([29.549417, -81.206359], { icon: valveIcon }).addTo(map).bindPopup('Clarifier 7/8 Return Valves');
+        //
+        L.marker([29.548823, -81.206466], { icon: valveIcon }).addTo(map).bindPopup('QC #1');
+        L.marker([29.548858, -81.206527], { icon: valveIcon }).addTo(map).bindPopup('QC #2');
+    </script>
+</body>
+
+</html>
